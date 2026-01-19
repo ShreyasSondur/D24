@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rustic-black: #0F0C08;
+  --color-rustic-brown: #2C1E16;
+  --color-rustic-orange: #d35400;
+  /* Keeping as base, will override locally if needed */
+  --color-rustic-cream: #EDE6D6;
+  --color-rustic-gold: #C6A664;
+  --color-rustic-beige: #D8C3A5;
+
+  --font-serif: var(--font-oswald);
+  --font-sans: var(--font-lato);
+}
+
+:root {
+  --background: var(--color-rustic-black);
+  --foreground: var(--color-rustic-cream);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
